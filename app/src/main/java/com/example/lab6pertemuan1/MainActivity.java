@@ -10,13 +10,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.tampilan_2);
 
-        ImageView imageView = findViewById(R.id.gambardariinternet);
+        //declare variabel dari komponen imageview
+        ImageView kotakGambar = findViewById(R.id.komponengambar);
 
-        String url = "https://upload.wikimedia.org/wikipedia/commons/5/56/White_shark.jpg";
+        //declare url dari internet
+        String urldariinternet = "https://upload.wikimedia.org/wikipedia/commons/2/24/Oceanic_Whitetip_Shark.png";
 
-        Picasso.with(this).load(url).into(imageView);
+        //memasukkan gambar dari url ke komponen imageview
+        Picasso.with(this).load(urldariinternet).into(kotakGambar);
+
+
+        //variabel primitive: string, int, boolean
+        //variabel reference: object
+
+
 
     }
 }
